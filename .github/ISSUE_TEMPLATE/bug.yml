@@ -1,0 +1,86 @@
+name: Bug report
+description: Report a reproducible problem in a Nexus Labs project
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Do not include credentials, personal
+        data, or vulnerability details. Use the private security process for
+        security-sensitive reports.
+
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or component
+      description: Which repository, service, package, or component is affected?
+      placeholder: nexus / cloud-gateway / package-name
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the observed behavior and its impact.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest deterministic sequence that reproduces the problem.
+      placeholder: |
+        1. Configure ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant OS, runtime, version, commit, and deployment details.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add sanitized logs, traces, screenshots, failing tests, or commit links.
+
+  - type: dropdown
+    id: regression
+    attributes:
+      label: Regression
+      description: Did this work correctly before?
+      options:
+        - Unknown
+        - Yes
+        - No
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checks
+      options:
+        - label: I searched existing issues and pull requests for this problem.
+          required: true
+        - label: I removed secrets, credentials, and personal data from the report.
+          required: true
+        - label: This is not a public disclosure of a security vulnerability.
+          required: true
