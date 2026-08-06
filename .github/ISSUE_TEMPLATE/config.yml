@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Security vulnerability
+  - name: Vulnerabilidad de seguridad
     url: https://github.com/nexuslabs-tech/.github/blob/main/SECURITY.md
-    about: Do not disclose vulnerabilities in public issues. Follow the private reporting policy.
-  - name: Support guidance
+    about: No divulgues vulnerabilidades en incidencias públicas. Seguí la política de informe privado.
+  - name: Guía de soporte
     url: https://github.com/nexuslabs-tech/.github/blob/main/SUPPORT.md
-    about: Choose the appropriate repository and support channel before opening an issue.
+    about: Elegí el repositorio y el canal de soporte adecuados antes de abrir una incidencia.

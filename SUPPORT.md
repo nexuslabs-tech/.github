@@ -1,33 +1,34 @@
-# Support
+# Soporte
 
-Choose the channel that matches the request so it can be handled with the right
-context and evidence.
+Elegí el canal que corresponda a la solicitud para que pueda tratarse con el
+contexto y la evidencia adecuados.
 
-## Bugs
+## Errores
 
-Open a bug report in the affected repository. Include reproduction steps,
-environment details, expected and actual behavior, and the smallest useful set
-of logs or screenshots.
+Abrí un informe de error en el repositorio afectado. Incluí los pasos de
+reproducción, los detalles del entorno, el comportamiento esperado y observado,
+y el conjunto mínimo útil de registros o capturas.
 
-## Feature requests
+## Propuestas de funcionalidad
 
-Open a feature request in the repository that would own the behavior. Describe
-the problem and desired outcome before proposing implementation details.
+Abrí una propuesta en el repositorio que sería responsable del comportamiento.
+Describí el problema y el resultado deseado antes de proponer detalles de
+implementación.
 
-## Usage and development questions
+## Preguntas de uso y desarrollo
 
-Check the repository README, documentation, existing issues, and discussions
-first. If no answer exists, open a question in the affected repository using the
-channel it provides.
+Consultá primero el archivo README, la documentación, las incidencias existentes
+y las conversaciones del repositorio. Si no hubiera una respuesta, formulá la
+pregunta mediante el canal provisto por el repositorio afectado.
 
-## Security and sensitive data
+## Seguridad y datos sensibles
 
-Do not post vulnerabilities, credentials, customer information, or other
-sensitive material publicly. Follow [`SECURITY.md`](SECURITY.md).
+No publiques vulnerabilidades, credenciales, información de clientes ni otro
+material sensible. Seguí [`SECURITY.md`](SECURITY.md).
 
-## Scope and response
+## Alcance y respuesta
 
-Support availability varies by project maturity. Archived experiments and
-unsupported versions may receive no active maintenance. A public repository or
-issue tracker does not imply a guaranteed response time or service-level
-agreement.
+La disponibilidad de soporte depende de la madurez de cada proyecto. Los
+experimentos archivados y las versiones sin soporte podrían no recibir
+mantenimiento activo. Un repositorio público o un registro de incidencias no
+implican un tiempo de respuesta garantizado ni un acuerdo de nivel de servicio.

@@ -1,77 +1,88 @@
-# Contributing to Nexus Labs projects
+# Contribuir a los proyectos de Nexus Labs
 
-Thank you for helping improve a Nexus Labs project. Contributions are evaluated
-on correctness, evidence, maintainability, and their fit with the affected
-repository's architecture.
+Gracias por ayudar a mejorar un proyecto de Nexus Labs. Las contribuciones se
+evalúan por su corrección, evidencia, mantenibilidad y adecuación a la
+arquitectura del repositorio afectado.
 
-## Before making a change
+## Antes de realizar un cambio
 
-1. Read the repository README and any local contribution or agent instructions.
-2. Search existing issues and pull requests for related work.
-3. For a non-trivial change, open or reference an issue that defines the problem
-   and expected outcome.
-4. Keep the proposed scope narrow enough to validate and reverse safely.
+1. Leé el archivo README del repositorio y toda instrucción local para
+   contribuciones o agentes.
+2. Buscá trabajos relacionados en las incidencias y solicitudes de cambios
+   existentes.
+3. Para un cambio no trivial, abrí o referenciá una incidencia que defina el
+   problema y el resultado esperado.
+4. Mantené el alcance lo suficientemente acotado como para validarlo y revertirlo
+   de forma segura.
 
-Repository-specific instructions override this document when they are stricter.
+Las instrucciones específicas de cada repositorio prevalecen cuando son más
+estrictas que este documento.
 
-## Branches and commits
+## Ramas y confirmaciones
 
-Use short-lived branches with a descriptive prefix:
+Usá ramas de corta duración con un prefijo descriptivo:
 
-- `feat/` for new behavior.
-- `fix/` for corrections.
-- `docs/` for documentation-only work.
-- `refactor/` for behavior-preserving structural changes.
-- `test/` for test-only work.
-- `chore/` for maintenance.
+- `feat/` para comportamiento nuevo.
+- `fix/` para correcciones.
+- `docs/` para cambios exclusivos de documentación.
+- `refactor/` para cambios estructurales que preservan el comportamiento.
+- `test/` para cambios exclusivos de pruebas.
+- `chore/` para mantenimiento.
 
-Prefer focused commits with imperative messages. Conventional Commit prefixes
-are encouraged, for example `feat:`, `fix:`, `docs:`, `test:`, and `chore:`.
+Priorizá confirmaciones acotadas y mensajes en modo imperativo. Se recomiendan
+los prefijos de Confirmaciones Convencionales, por ejemplo `feat:`, `fix:`,
+`docs:`, `test:` y `chore:`.
 
-Do not mix unrelated formatting, generated output, or cleanup into a functional
-change unless the pull request explicitly accounts for it.
+No mezcles formato, contenido generado o limpieza sin relación con un cambio
+funcional, salvo que la solicitud explique explícitamente ese alcance.
 
-## Evidence requirements
+## Requisitos de evidencia
 
-Every pull request must explain:
+Cada solicitud de cambios debe explicar:
 
-- What changed and why.
-- What assumptions were made.
-- Which commands or checks were run.
-- The observed results, including failures or limitations.
-- The operational risk and rollback path.
-- Whether documentation or runtime migration is required.
+- Qué cambió y por qué.
+- Qué supuestos se realizaron.
+- Qué comandos o verificaciones se ejecutaron.
+- Qué resultados se observaron, incluidos fallos o limitaciones.
+- Cuál es el riesgo operativo y el camino de reversión.
+- Si se requiere documentación o migración del entorno de ejecución.
 
-Screenshots, logs, traces, and benchmarks should be attached only when they
-materially support the claim being made. Redact secrets and personal data.
+Adjuntá capturas, registros, trazas y mediciones sólo cuando respalden de manera
+material la afirmación realizada. Eliminá secretos y datos personales.
 
-## Source and runtime separation
+## Separación entre código fuente y ejecución
 
-Never commit runtime state or machine-local data, including:
+Nunca confirmes estado de ejecución ni datos locales de una máquina, incluidos:
 
-- SQLite databases and their `-wal` or `-shm` files.
-- Logs, caches, lock files created by running services, or temporary output.
-- Backups, memory snapshots, exported user data, or generated evidence bundles.
-- Credentials, tokens, private keys, `.env` values, or local tool settings.
+- Bases de datos SQLite y sus archivos `-wal` o `-shm`.
+- Registros, cachés, archivos de bloqueo creados por servicios en ejecución o
+  resultados temporales.
+- Copias de seguridad, instantáneas de memoria, datos exportados de usuarios o
+  paquetes de evidencia generados.
+- Credenciales, tokens, claves privadas, valores de `.env` o configuración local
+  de herramientas.
 
-Project lockfiles that define reproducible dependencies are source artifacts and
-should remain versioned. Runtime lock files are not.
+Los archivos de bloqueo del proyecto que definen dependencias reproducibles son
+artefactos del código fuente y deben permanecer versionados. Los bloqueos del
+entorno de ejecución no deben versionarse.
 
-## Pull request workflow
+## Flujo de solicitudes de cambios
 
-1. Update your branch from the default branch.
-2. Run the repository's documented validation and harness commands.
-3. Complete the pull request template with concrete evidence.
-4. Wait for required automated checks.
-5. Resolve review conversations before merge.
-6. Prefer squash merge unless preserving individual commits is intentional.
+1. Actualizá tu rama desde la rama predeterminada.
+2. Ejecutá los comandos de validación y del arnés documentados por el repositorio.
+3. Completá la plantilla con evidencia concreta.
+4. Esperá las verificaciones automáticas requeridas.
+5. Resolvé las conversaciones de revisión antes de fusionar.
+6. Priorizá la fusión condensada, salvo que exista una razón para preservar cada
+   confirmación individual.
 
-AI-assisted work is welcome, but the author remains responsible for every
-change. Repository state, executable checks, and primary documentation are the
-sources of truth—not generated summaries or model memory.
+El trabajo asistido por inteligencia artificial es bienvenido, pero la persona
+autora sigue siendo responsable de cada cambio. El estado del repositorio, las
+verificaciones ejecutables y la documentación primaria son las fuentes de
+verdad, no los resúmenes generados ni la memoria de un modelo.
 
-## Security
+## Seguridad
 
-Do not disclose a suspected vulnerability in a public issue. Follow
-[`SECURITY.md`](SECURITY.md) and use the affected repository's private security
-advisory flow.
+No divulgues una posible vulnerabilidad en una incidencia pública. Seguí
+[`SECURITY.md`](SECURITY.md) y utilizá el canal privado de seguridad del
+repositorio afectado.

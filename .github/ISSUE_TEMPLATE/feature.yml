@@ -1,72 +1,72 @@
-name: Feature request
-description: Propose an evidence-based improvement to a Nexus Labs project
-title: "[Feature]: "
+name: Propuesta de funcionalidad
+description: Proponé una mejora basada en evidencia para un proyecto de Nexus Labs
+title: "[Propuesta]: "
 body:
   - type: markdown
     attributes:
       value: |
-        Start with the problem and desired outcome. Implementation ideas are
-        useful, but they should not replace a clear statement of need.
+        Comenzá por el problema y el resultado deseado. Las ideas de
+        implementación son útiles, pero no deben reemplazar una necesidad clara.
 
   - type: input
     id: repository
     attributes:
-      label: Repository or component
-      description: Which repository, service, package, or component would own this change?
-      placeholder: nexus / engineering-harness / component-name
+      label: Repositorio o componente
+      description: ¿Qué repositorio, servicio, paquete o componente sería responsable del cambio?
+      placeholder: nexus / arnes-de-ingenieria / nombre-del-componente
     validations:
       required: true
 
   - type: textarea
     id: problem
     attributes:
-      label: Problem or opportunity
-      description: What limitation, repeated cost, or unmet need should be addressed?
+      label: Problema u oportunidad
+      description: ¿Qué limitación, costo repetido o necesidad sin resolver debe abordarse?
     validations:
       required: true
 
   - type: textarea
     id: outcome
     attributes:
-      label: Desired outcome
-      description: Describe observable success without prescribing an implementation.
+      label: Resultado deseado
+      description: Describí un resultado observable sin imponer una implementación.
     validations:
       required: true
 
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence and context
-      description: Add examples, measurements, prior incidents, references, or constraints.
+      label: Evidencia y contexto
+      description: Agregá ejemplos, mediciones, incidentes anteriores, referencias o restricciones.
     validations:
       required: true
 
   - type: textarea
     id: proposal
     attributes:
-      label: Proposed approach
-      description: Optional implementation or design proposal.
+      label: Enfoque propuesto
+      description: Propuesta opcional de implementación o diseño.
 
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives considered
-      description: What other approaches or workarounds were evaluated?
+      label: Alternativas consideradas
+      description: ¿Qué otros enfoques o soluciones temporales se evaluaron?
 
   - type: textarea
     id: scope
     attributes:
-      label: Scope, risks, and dependencies
-      description: Identify affected systems, compatibility concerns, and external dependencies.
+      label: Alcance, riesgos y dependencias
+      description: Identificá los sistemas afectados, la compatibilidad y las dependencias externas.
 
   - type: checkboxes
     id: checks
     attributes:
-      label: Pre-submission checks
+      label: Verificaciones previas
       options:
-        - label: I searched existing issues, pull requests, and documentation.
+        - label: Busqué en las incidencias, solicitudes de cambios y documentación existentes.
           required: true
-        - label: I described the problem and observable outcome separately from the implementation.
+        - label: Describí el problema y el resultado observable por separado de la implementación.
           required: true
-        - label: I removed secrets, credentials, and personal data from the request.
+        - label: Eliminé secretos, credenciales y datos personales de la propuesta.
           required: true

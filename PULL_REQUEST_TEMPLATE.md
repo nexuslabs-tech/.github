@@ -1,35 +1,35 @@
-## Summary
+## Resumen
 
-<!-- What changed? Keep this concrete and bounded. -->
+<!-- ¿Qué cambió? Mantené la descripción concreta y acotada. -->
 
-## Problem and rationale
+## Problema y justificación
 
-<!-- What problem does this solve, and why is this the right scope now? -->
+<!-- ¿Qué problema resuelve y por qué este alcance es el adecuado ahora? -->
 
-## Evidence
+## Evidencia
 
-<!-- List exact commands/checks and observed results. Include limitations. -->
+<!-- Enumerá los comandos o verificaciones exactos y sus resultados. Incluí las limitaciones. -->
 
 ```text
-Command:
-Result:
+Comando:
+Resultado:
 ```
 
-## Risk and rollback
+## Riesgo y reversión
 
-<!-- Operational risk, compatibility impact, migration needs, and rollback. -->
+<!-- Riesgo operativo, compatibilidad, migraciones necesarias y forma de revertir. -->
 
-## Documentation and runtime impact
+## Impacto sobre documentación y ejecución
 
-<!-- Note documentation changes and confirm source/runtime separation. -->
+<!-- Indicá los cambios documentales y confirmá la separación entre código y ejecución. -->
 
-## Checklist
+## Lista de verificación
 
-- [ ] The change is limited to the stated scope.
-- [ ] Relevant tests, checks, or harness commands pass.
-- [ ] New behavior is covered by tests or an explicit validation procedure.
-- [ ] Documentation reflects the resulting behavior.
-- [ ] No secrets, personal data, runtime databases, logs, backups, or local
-      configuration were committed.
-- [ ] Dependencies and external Actions are pinned reproducibly where applicable.
-- [ ] Risks, limitations, and rollback are documented above.
+- [ ] El cambio se limita al alcance declarado.
+- [ ] Las pruebas, verificaciones o comandos del arnés relevantes finalizan correctamente.
+- [ ] El comportamiento nuevo está cubierto por pruebas o por un procedimiento explícito de validación.
+- [ ] La documentación refleja el comportamiento resultante.
+- [ ] No se confirmaron secretos, datos personales, bases de datos de ejecución,
+      registros, copias de seguridad ni configuración local.
+- [ ] Las dependencias y acciones externas están fijadas de forma reproducible cuando corresponde.
+- [ ] Los riesgos, limitaciones y la reversión están documentados más arriba.

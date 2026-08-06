@@ -1,56 +1,56 @@
-name: Bug report
-description: Report a reproducible problem in a Nexus Labs project
-title: "[Bug]: "
+name: Informe de error
+description: Informá un problema reproducible en un proyecto de Nexus Labs
+title: "[Error]: "
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for reporting a problem. Do not include credentials, personal
-        data, or vulnerability details. Use the private security process for
-        security-sensitive reports.
+        Gracias por informar un problema. No incluyas credenciales, datos
+        personales ni detalles de vulnerabilidades. Utilizá el proceso privado
+        de seguridad para los informes sensibles.
 
   - type: input
     id: repository
     attributes:
-      label: Repository or component
-      description: Which repository, service, package, or component is affected?
-      placeholder: nexus / cloud-gateway / package-name
+      label: Repositorio o componente
+      description: ¿Qué repositorio, servicio, paquete o componente está afectado?
+      placeholder: nexus / cloud-gateway / nombre-del-paquete
     validations:
       required: true
 
   - type: textarea
     id: problem
     attributes:
-      label: Problem
-      description: Describe the observed behavior and its impact.
+      label: Problema
+      description: Describí el comportamiento observado y su impacto.
     validations:
       required: true
 
   - type: textarea
     id: reproduction
     attributes:
-      label: Reproduction steps
-      description: Provide the smallest deterministic sequence that reproduces the problem.
+      label: Pasos de reproducción
+      description: Indicá la secuencia determinista más corta que reproduce el problema.
       placeholder: |
-        1. Configure ...
-        2. Run ...
-        3. Observe ...
+        1. Configurá...
+        2. Ejecutá...
+        3. Observá...
     validations:
       required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: Expected behavior
-      description: What should have happened instead?
+      label: Comportamiento esperado
+      description: ¿Qué debería haber ocurrido?
     validations:
       required: true
 
   - type: textarea
     id: environment
     attributes:
-      label: Environment
-      description: Include relevant OS, runtime, version, commit, and deployment details.
+      label: Entorno
+      description: Incluí el sistema operativo, entorno de ejecución, versión, confirmación y despliegue relevantes.
       render: text
     validations:
       required: true
@@ -58,17 +58,17 @@ body:
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence
-      description: Add sanitized logs, traces, screenshots, failing tests, or commit links.
+      label: Evidencia
+      description: Agregá registros depurados, trazas, capturas, pruebas fallidas o enlaces a confirmaciones.
 
   - type: dropdown
     id: regression
     attributes:
-      label: Regression
-      description: Did this work correctly before?
+      label: Regresión
+      description: ¿Funcionaba correctamente antes?
       options:
-        - Unknown
-        - Yes
+        - No se sabe
+        - Sí
         - No
     validations:
       required: true
@@ -76,11 +76,11 @@ body:
   - type: checkboxes
     id: checks
     attributes:
-      label: Pre-submission checks
+      label: Verificaciones previas
       options:
-        - label: I searched existing issues and pull requests for this problem.
+        - label: Busqué este problema en las incidencias y solicitudes de cambios existentes.
           required: true
-        - label: I removed secrets, credentials, and personal data from the report.
+        - label: Eliminé secretos, credenciales y datos personales del informe.
           required: true
-        - label: This is not a public disclosure of a security vulnerability.
+        - label: Esto no es una divulgación pública de una vulnerabilidad de seguridad.
           required: true
