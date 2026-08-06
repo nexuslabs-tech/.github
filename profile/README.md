@@ -1,11 +1,10 @@
 # Nexus Labs
 
-> Diseñando el próximo estándar.
-
-Nexus Labs desarrolla sistemas de software basados en evidencia, diseñados para
+> Engineering the Next Standard
+Nexus Labs desarrolla sistemas basados en tecnología intelgente, diseñados para
 la continuidad, la auditabilidad y la evolución a largo plazo. Nuestro trabajo
-abarca infraestructura para ingeniería, contexto y memoria agnósticos del modelo,
-y productos independientes.
+abarca infraestructura para ingeniería agéntica, contexto y memoria agnósticos del modelo,
+y productos independientes. Creamos nuestros productos pensados y basados en IA.
 
 ## Principios de ingeniería
 
