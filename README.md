@@ -1,24 +1,28 @@
-# Nexus Labs organization defaults
+# Valores predeterminados de la organización Nexus Labs
 
-This repository contains the public organization profile and the default
-community health files used across Nexus Labs repositories.
+Este repositorio contiene el perfil público de la organización y los archivos
+predeterminados de colaboración utilizados en los repositorios de Nexus Labs.
 
-It is governance infrastructure, not product source code.
+Es infraestructura de gobernanza, no código fuente de un producto.
 
-## Contents
+## Contenido
 
-- `profile/README.md` — public organization profile.
-- `CONTRIBUTING.md` — shared contribution and evidence requirements.
-- `SECURITY.md` — coordinated vulnerability reporting policy.
-- `SUPPORT.md` — support and issue-routing guidance.
-- `PULL_REQUEST_TEMPLATE.md` — default pull request evidence template.
-- `.github/ISSUE_TEMPLATE/` — structured bug and feature request forms.
+- `profile/README.md`: perfil público de la organización.
+- `CONTRIBUTING.md`: requisitos compartidos de contribución y evidencia.
+- `SECURITY.md`: política coordinada para informar vulnerabilidades.
+- `SUPPORT.md`: guía de soporte y derivación de incidencias.
+- `PULL_REQUEST_TEMPLATE.md`: plantilla predeterminada de evidencia para
+  solicitudes de cambios.
+- `.github/ISSUE_TEMPLATE/`: formularios estructurados para errores y propuestas
+  de funcionalidad.
 
-Repository-specific instructions take precedence when they are stricter or
-need to account for a project's architecture, risk, or regulatory context.
+Las instrucciones específicas de cada repositorio tienen precedencia cuando son
+más estrictas o necesitan contemplar su arquitectura, riesgo o contexto
+regulatorio.
 
-## Change policy
+## Política de cambios
 
-Changes to these defaults should be small, reviewable, and supported by a
-clear rationale. Validate their effect on at least one representative
-repository before treating them as an organization-wide standard.
+Los cambios sobre estos valores predeterminados deben ser pequeños, revisables y
+estar respaldados por una justificación clara. Antes de convertirlos en un
+estándar para toda la organización, se debe validar su efecto sobre al menos un
+repositorio representativo.

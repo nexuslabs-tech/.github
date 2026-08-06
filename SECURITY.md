@@ -1,46 +1,49 @@
-# Security policy
+# Política de seguridad
 
-Nexus Labs treats security reports as evidence-sensitive engineering work. Do
-not disclose suspected vulnerabilities, credentials, personal data, or exploit
-details in a public issue, discussion, or pull request.
+Nexus Labs trata los informes de seguridad como trabajo de ingeniería sensible a
+la evidencia. No divulgues posibles vulnerabilidades, credenciales, datos
+personales ni detalles de explotación en una incidencia, conversación o
+solicitud de cambios pública.
 
-## Supported versions
+## Versiones compatibles
 
-Unless an individual repository states otherwise, security fixes target:
+Salvo que un repositorio indique lo contrario, las correcciones de seguridad se
+dirigen a:
 
-- The current default branch.
-- Releases explicitly marked as supported by that repository.
+- La rama predeterminada actual.
+- Las versiones que el repositorio marque explícitamente como compatibles.
 
-Development branches, archived repositories, prototypes, and historical tags
-may not receive security updates.
+Las ramas de desarrollo, los repositorios archivados, los prototipos y las
+etiquetas históricas podrían no recibir actualizaciones de seguridad.
 
-## Reporting a vulnerability
+## Informar una vulnerabilidad
 
-Use the affected repository's private reporting channel:
+Utilizá el canal privado del repositorio afectado:
 
-1. Open the repository's **Security** tab.
-2. Select **Advisories**.
-3. Choose **Report a vulnerability** or create a private draft advisory.
+1. Abrí la pestaña **Seguridad** del repositorio.
+2. Seleccioná **Avisos**.
+3. Elegí **Informar una vulnerabilidad** o creá un aviso privado en borrador.
 
-If private vulnerability reporting is unavailable, open an issue in
+Si el informe privado no estuviera disponible, abrí una incidencia en
 [`nexuslabs-tech/.github`](https://github.com/nexuslabs-tech/.github/issues/new)
-that contains no vulnerability details and requests a private reporting channel.
+sin incluir detalles de la vulnerabilidad y solicitá un canal privado.
 
-Include, when possible:
+Incluí, cuando sea posible:
 
-- The affected repository, component, branch, or release.
-- A concise description of the impact.
-- Reproduction steps or a minimal proof of concept.
-- Relevant logs or traces with secrets and personal data removed.
-- Known mitigations or environmental requirements.
-- Whether the issue is already public or being actively exploited.
+- El repositorio, componente, rama o versión afectada.
+- Una descripción concisa del impacto.
+- Pasos de reproducción o una prueba de concepto mínima.
+- Registros o trazas relevantes sin secretos ni datos personales.
+- Mitigaciones conocidas o requisitos del entorno.
+- Si el problema ya es público o está siendo explotado activamente.
 
-## What to expect
+## Qué esperar
 
-We will validate the report, assess severity and affected versions, and
-coordinate remediation and disclosure based on the available evidence. Response
-times depend on impact and project status; this policy does not promise a fixed
-service-level agreement or bounty.
+Validaremos el informe, evaluaremos su gravedad y las versiones afectadas, y
+coordinaremos la corrección y divulgación de acuerdo con la evidencia disponible.
+Los tiempos de respuesta dependen del impacto y del estado del proyecto; esta
+política no promete un acuerdo fijo de nivel de servicio ni una recompensa.
 
-Please allow time for investigation before publishing details. We will credit
-reporters when requested and when coordinated disclosure is appropriate.
+Permití un tiempo razonable de investigación antes de publicar detalles. Se
+reconocerá a quienes informen el problema cuando lo soliciten y la divulgación
+coordinada sea apropiada.

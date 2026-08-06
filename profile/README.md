@@ -1,42 +1,46 @@
 # Nexus Labs
 
-> Engineering the next standard.
+> Diseñando el próximo estándar.
 
-Nexus Labs builds evidence-driven software systems designed for continuity,
-auditability, and long-term evolution. Our work spans developer infrastructure,
-model-agnostic context and memory, and independent product initiatives.
+Nexus Labs desarrolla sistemas de software basados en evidencia, diseñados para
+la continuidad, la auditabilidad y la evolución a largo plazo. Nuestro trabajo
+abarca infraestructura para ingeniería, contexto y memoria agnósticos del modelo,
+y productos independientes.
 
-## Engineering principles
+## Principios de ingeniería
 
-- **Evidence before claims.** Decisions should be supported by reproducible
-  checks, explicit assumptions, and inspectable results.
-- **Source and runtime stay separate.** Source repositories must not become
-  storage for databases, logs, backups, locks, credentials, or machine-local
-  configuration.
-- **Model independence.** Automation and project knowledge should remain usable
-  across tools and model providers.
-- **Small, reversible changes.** Prefer bounded changes with a clear validation
-  path and rollback strategy.
-- **Security by default.** Use least privilege, immutable dependencies, and
-  explicit ownership of sensitive operations.
+- **Evidencia antes que afirmaciones.** Las decisiones deben estar respaldadas
+  por verificaciones reproducibles, supuestos explícitos y resultados
+  inspeccionables.
+- **El código fuente y el entorno de ejecución permanecen separados.** Los
+  repositorios de código no deben convertirse en depósitos de bases de datos,
+  registros, copias de seguridad, bloqueos, credenciales ni configuración local
+  de una máquina.
+- **Independencia del modelo.** La automatización y el conocimiento de los
+  proyectos deben seguir siendo utilizables con distintas herramientas y
+  proveedores de modelos.
+- **Cambios pequeños y reversibles.** Priorizamos cambios acotados, con un camino
+  claro de validación y una estrategia de reversión.
+- **Seguridad desde el diseño.** Aplicamos privilegio mínimo, dependencias
+  inmutables y responsabilidad explícita sobre las operaciones sensibles.
 
-## Portfolio
+## Proyectos
 
-- **Nexus / DCE** — a model-agnostic continuity and memory framework for
-  semantic, cognitive, and operational context.
-- **Sentriq** — a multi-component product and proving ground for rigorous,
-  evidence-driven engineering workflows.
-- **Wetcom, Bioguard, and future initiatives** — independent products developed
-  under the same engineering governance.
+- **Nexus / DCE:** un marco agnóstico del modelo para la continuidad y la memoria
+  de contexto semántico, cognitivo y operativo.
+- **Sentriq:** un producto compuesto por múltiples componentes y un campo de
+  prueba para procesos de ingeniería rigurosos y basados en evidencia.
+- **Wetcom, Bioguard y futuras iniciativas:** productos independientes
+  desarrollados bajo la misma gobernanza de ingeniería.
 
-The organization is being consolidated incrementally. Repositories are moved
-only after their history, branches, automation, and security settings have been
-verified.
+La organización se está consolidando de manera gradual. Los repositorios se
+trasladan únicamente después de verificar su historial, ramas, automatización y
+configuración de seguridad.
 
-## Working with us
+## Cómo trabajar con nosotros
 
-- Read the [contribution guide](https://github.com/nexuslabs-tech/.github/blob/main/CONTRIBUTING.md).
-- Report vulnerabilities through the affected repository's private security
-  advisory flow; see the [security policy](https://github.com/nexuslabs-tech/.github/blob/main/SECURITY.md).
-- Use the [support guide](https://github.com/nexuslabs-tech/.github/blob/main/SUPPORT.md)
-  to choose the right channel.
+- Consultá la [guía de contribución](https://github.com/nexuslabs-tech/.github/blob/main/CONTRIBUTING.md).
+- Informá vulnerabilidades mediante el canal privado del repositorio afectado;
+  consultá la [política de seguridad](https://github.com/nexuslabs-tech/.github/blob/main/SECURITY.md).
+- Usá la [guía de soporte](https://github.com/nexuslabs-tech/.github/blob/main/SUPPORT.md)
+  para elegir el canal adecuado.
